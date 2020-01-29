@@ -19,6 +19,7 @@ class PackageGenerator
 
     public function createFiles($validatorResults, $root = null)
     {
+        $root = $root ?: getcwd();
         $root = $root ?: __DIR__ . '/../../../../';
         $root = realpath($root);
 
